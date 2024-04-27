@@ -1,6 +1,6 @@
 import { legacy_createStore as createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { thunk } from 'redux-thunk';
+import thunk from 'redux-thunk'; // corrected import statement
 import rootReducer from './reducers';
 
 const initialState = {};
