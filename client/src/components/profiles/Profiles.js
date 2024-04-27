@@ -8,13 +8,10 @@ import ProfileItem from './ProfileItem';
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 
     useEffect(() => {
-        // Check if profiles are not already loaded and loading is true
         if (loading) {
             getProfiles();
         }
-    }, [loading, getProfiles]); // Add loading as a dependency to useEffect
-
-    console.log("Profiles: ", profiles);
+    }, [loading, getProfiles]);
 
     return (
         <Fragment>
