@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('../config/default.json');
+const config = require('../config/production.json');
 
 module.exports = function (req, res, next) {
     // Get token from the header

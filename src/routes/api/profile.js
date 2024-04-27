@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const config = require('../../config/default.json');
+const config = require('../../config/production.json');
 const auth = require('../../middleware/auth');
 const { check, validationResult } = require('express-validator');
 const axios = require('axios');
