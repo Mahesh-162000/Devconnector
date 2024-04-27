@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "client": "npm start --prefix client",
-    "build": "react-scripts build"
+    "client": "npm start --prefix client"
   },
   "author": "Mahesh Chakravarthy",
   "license": "ISC",
