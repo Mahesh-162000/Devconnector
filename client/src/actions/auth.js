@@ -23,7 +23,7 @@ export const loadUser = () => async dispatch => {
         setAuthToken(localStorage.token);
     }
 
-    const apiUrl = 'http://localhost:5000/api/auth';
+    const apiUrl = '/api/auth';
 
     try {
         const res = await axios.get(apiUrl);
@@ -49,7 +49,7 @@ export const register = ({ name, email, password }) => async dispatch => {
 
     const body = JSON.stringify({ name, email, password });
 
-    const apiUrl = 'http://localhost:5000/api/users';
+    const apiUrl = '/api/users';
 
     try {
         const res = await axios.post(apiUrl, body, config);
@@ -85,7 +85,7 @@ export const login = (email, password) => async dispatch => {
     const body = JSON.stringify({ email, password });
     console.log(body);
 
-    const apiUrl = 'http://localhost:5000/api/auth';
+    const apiUrl = '/api/auth';
 
     try {
         const res = await axios.post(apiUrl, body, config);
